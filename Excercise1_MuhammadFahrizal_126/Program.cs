@@ -75,24 +75,7 @@ namespace Excercise1_MuhammadFahrizal_126
             }
         }
 
-        public void BubbleSortArray2()
-        {
-            for (int i = 1; i < n; i++) // for n-2 passes
-            {
-                // pada pass i, bandingkan n-2 elemen pertama dengan elemen selanjutnya 
-                for (int MF = 0; MF < n - 2; MF++)
-                {
-                    if (farizal[MF] > farizal[MF + 1]) // jika elemen tidak dalam urutan yang benar
-                    {
-                        //tuar elemen 
-                        int temp;
-                        temp = farizal[MF];
-                        farizal[MF] = farizal[MF + 1];
-                        farizal[MF + 1] = temp;
-                    }
-                }
-            }
-        }
+        
 
 
         static void Main(string[] args)
@@ -105,8 +88,6 @@ namespace Excercise1_MuhammadFahrizal_126
 
             // Pemanggilan fungsi untuk mengurutkan array 
             myList.BubbleSortArray1();
-            // Pemanggilan fungsi untuk mengurutkan array 
-            myList.BubbleSortArray2();
 
             //pemanggilan fungsi untuk menampilkan array yang tersusun
             myList.display();
